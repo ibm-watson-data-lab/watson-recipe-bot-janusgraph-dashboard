@@ -11,10 +11,10 @@ Here is a sample screenshot of the dashboard:
 The following environment variables are required to run the application:
 
 ```
-GRAPH_API_URL=https://ibmgraph-alpha.ng.bluemix.net/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/g
-GRAPH_USERNAME=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-GRAPH_PASSWORD=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-GRAPH_ID=watson_recipe_bot
+JANUSGRAPH_URL=https://xxx.composedb.com:yyyyy
+JANUSGRAPH_USERNAME=admin
+JANUSGRAPH_PASSWORD=XXXXXXXXXXXXXXXX
+GRAPH_ID=recipebot
 SNS_API_URL=http://my-simple-notification-service.mybluemix.net
 SNS_API_KEY=NDc4gxGdqhWyaX
 ```
@@ -38,11 +38,11 @@ including setting up the appropriate Bluemix services such as JanusGraph and Ret
 
 If you haven't already installed Node.js you can install it by following the instructions [here](https://nodejs.org/en/).
 
-From the command-line cd into the watson-recipe-bot-graph-dashboard directory (clone it first if you haven't already):
+From the command-line cd into the watson-recipe-bot-janusgraph-dashboard directory (clone it first if you haven't already):
 
 ```
-git clone https://github.com/ibm-cds-labs/watson-recipe-bot-graph-dashboard
-cd watson-recipe-bot-graph-dashboard
+git clone https://github.com/ibm-cds-labs/watson-recipe-bot-janusgraph-dashboard
+cd watson-recipe-bot-janusgraph-dashboard
 ```
  
 Install dependencies:
@@ -60,9 +60,10 @@ cp .env.template .env
 Copy and paste the following values from the .env file in your Watson Recipe Bot:
 
 ```
-GRAPH_API_URL=https://ibmgraph-alpha.ng.bluemix.net/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/g
-GRAPH_USERNAME=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-GRAPH_PASSWORD=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+JANUSGRAPH_URL=https://xxx.composedb.com:yyyyy
+JANUSGRAPH_USERNAME=admin
+JANUSGRAPH_PASSWORD=XXXXXXXXXXXXXXXX
+GRAPH_ID=recipebot
 ```
 
 In the .env file enter the URL for the Simple Notification Service. If you deployed the SNS to Bluemix it will look something like this:
@@ -144,10 +145,6 @@ server starting on http://localhost:6015
 ```
 
 Open this URL in your browser. Then follow the **Watson Recipe Bot Configuration** steps below.
-
-### Deploying the Dashboard to Bluemix, cont.
-
-Coming soon!
 
 ### Watson Recipe Bot Configuration
 
