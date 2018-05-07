@@ -1,3 +1,5 @@
+:no_entry_sign: This project is no longer maintained
+
 # Watson Recipe Bot Dashboard
 
 The Watson Recipe Bot Dashboard is a web application that shows conversations with the 
